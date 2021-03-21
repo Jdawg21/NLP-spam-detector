@@ -9,21 +9,21 @@
 	<header>
 		<div class="container">
 		<div id="brandname">
-			ML App
+			NLP App
 		</div>
-		<h2>Spam Detector For SMS Messages</h2>
+		<h2>General Spam Detector</h2>
 		
 	</div>
 	</header>
-	<p style="color:blue;font-size:20;text-align: center;"><b>Results for Comment</b></p>
+	<p style="color:blue;font-size:20;text-align: center;"><b>Result:</b></p>
 	<div class="results">
 
 
 		
 	{% if prediction == 1%}
-	<h2 style="color:red;">Spam</h2>
+	<h2 style="color:red;">Spam message</h2>
 	{% elif prediction == 0%}
-	<h2 style="color:green;">Not a Spam (It is a Ham)</h2>
+	<h2 style="color:green;">Not a spam message</h2>
 	{% endif %}
 
 	</div>
